@@ -71,7 +71,7 @@ Follow these steps to set up the project in your local environment:
    python manage.py runserver
    ```
 
-   The API will now be available at `http://0.0.0.0:8000/api/tasks/`.
+   The API will now be available at `http://localhost:8000/api/tasks/`.
 
 ## Instructions to Run the Application with Docker
 
@@ -89,7 +89,7 @@ You can use Docker to run the application without additional local setup.
    docker run -p 8000:8000 todolist
    ```
 
-   This will expose the application at `http://0.0.0.0:8000`.
+   This will expose the application at `http://localhost:8000`.
 
 # GraphQL with Django and strawberry
 
