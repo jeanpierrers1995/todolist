@@ -1,161 +1,277 @@
 {
 	"info": {
-		"_postman_id": "103bc6b3-a912-4d58-96c9-4e7f30d3180d",
-		"name": "ToDo List Crehana API",
+		"_postman_id": "3cf40187-09bb-4d47-9809-3261d734e1fc",
+		"name": "ToDo List Crehana original",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1665438",
-		"_collection_link": "https://www.postman.com/cloudy-satellite-681835/workspace/todolist/collection/1665438-103bc6b3-a912-4d58-96c9-4e7f30d3180d?action=share&source=collection_link&creator=1665438"
+		"_collection_link": "https://www.postman.com/cloudy-satellite-681835/workspace/todolist/collection/1665438-3cf40187-09bb-4d47-9809-3261d734e1fc?action=share&source=collection_link&creator=1665438"
 	},
 	"item": [
 		{
-			"name": "GET all tasks",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tasks/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tasks",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST create task",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"title\": \"test v6\",\n    \"description\": \"test decription v6 \",\n    \"completed\": false\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "API REST FRAMEWORK",
+			"item": [
+				{
+					"name": "GET all tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tasks/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tasks",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET task by ID",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tasks/1/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tasks",
-						"1",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "PUT update task by ID",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"title\": \"test v6 [update]\",\n    \"description\": \"test decription v6 [update]\",\n    \"completed\": true\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "POST create task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test v7\",\n    \"description\": \"test decription v7\",\n    \"completed\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tasks/1/",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tasks",
-						"1",
-						""
-					]
+				{
+					"name": "GET task by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/6/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"6",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT update task by ID",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"test v6 [update]\",\n    \"description\": \"test decription v6 [update]\",\n    \"completed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/6/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"6",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE task by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tasks/5/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tasks",
+								"5",
+								""
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "DELETE task by ID",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/tasks/1",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"tasks",
-						"1"
-					]
+			"name": "API GRAPHQL",
+			"item": [
+				{
+					"name": "all tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\n  allTasks {\n    id\n    title\n    description\n    completed\n  }\n}\n",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation($title: String!, $description: String!, $completed: Boolean!) {\n  createTask(title: $title, description: $description, completed: $completed) {\n    id\n    title\n    description\n    completed\n  }\n}\n",
+								"variables": "{\n  \"title\": \"New Task 10\",\n  \"description\": \"This is a new task 10\",\n  \"completed\": false\n}\n"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation($id: Int!, $title: String!, $description: String!, $completed: Boolean!) {\n  updateTask(id: $id, title: $title, description: $description, completed: $completed) {\n    id\n    title\n    description\n    completed\n  }\n}\n",
+								"variables": "{\n  \"id\": 10,\n  \"title\": \"Updated Task 10\",\n  \"description\": \"This task has been updated 10\",\n  \"completed\": true\n}\n"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove tasks by ID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "mutation($id: Int!) {\n  deleteTask(id: $id)\n}\n",
+								"variables": "{\n  \"id\": 10\n}\n"
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/graphql/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"graphql",
+								""
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

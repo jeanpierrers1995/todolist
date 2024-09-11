@@ -3,7 +3,15 @@
 
 ## Project Description
 
-This is a RESTful API project to manage a To-Do List.
+1. [ ] This project is a To-Do List API built using Django Rest Framework and GraphQL with Strawberry. It provides RESTful API endpoints for managing tasks, including creating, updating, and deleting tasks. Additionally, it offers a GraphQL API for more flexible and efficient data querying and manipulation.
+2. [ ] The application supports error handling, including custom error messages when tasks are not found, and includes unit tests for ensuring the correctness of the functionality.
+
+## You can upload the postman file to test the endpoints
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://api.postman.com/collections/1665438-3cf40187-09bb-4d47-9809-3261d734e1fc?access_key=PMAT-01J7FQF6ZTB7NTN1ZVH2RDAV6G)
+
+### Or you can also import the file `todolist.postman_collection.json` in postman
+
 
 ## Requirements
 
@@ -63,7 +71,7 @@ Follow these steps to set up the project in your local environment:
    python manage.py runserver
    ```
 
-   The API will now be available at `http://127.0.0.1:8000/api/tasks/`.
+   The API will now be available at `http://0.0.0.0:8000/api/tasks/`.
 
 ## Instructions to Run the Application with Docker
 
@@ -81,7 +89,24 @@ You can use Docker to run the application without additional local setup.
    docker run -p 8000:8000 todolist
    ```
 
-   This will expose the application at `http://127.0.0.1:8000`.
+   This will expose the application at `http://0.0.0.0:8000`.
+
+# GraphQL with Django and strawberry
+
+
+- **GraphQL API Endpoints**:
+  - `/graphql/`: Endpoint for interacting with the GraphQL API.
+  
+### Supported Operations:
+  
+- **Queries (Fetch Data)**:
+  - `allTasks`: Fetches all tasks.
+
+
+- **Mutations (Modify Data)**:
+  - `createTask`: Creates a new task.
+  - `updateTask`: Updates an existing task.
+  - `deleteTask`: Deletes a task by ID.
 
 ## Instructions to Run the Tests
 
