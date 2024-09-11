@@ -152,3 +152,11 @@ This project uses **flake8** to ensure the code follows best practices and **bla
    ```
 
 This will automatically format all the files in the project according to black's standards.
+
+# Possible improvements
+
+- Apply environment variables to configure sensitive and environment-specific parameters.
+- Implement authentication and authorization to secure API endpoints.
+- Add more detailed documentation using tools such as Swagger.
+- Configure a CI/CD system to automate testing and deployment.
+- Add support for more robust databases such as PostgreSQL.
