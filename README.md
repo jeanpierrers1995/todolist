@@ -20,21 +20,6 @@
 - pip (Python package manager)
 - Git (to clone the repository)
 
-## Features
-
-- **API Endpoints**:
-  - `GET /tasks/` - Get all tasks.
-  - `POST /tasks/` - Create a new task.
-  - `GET /tasks/{id}/` - Get a task by its ID.
-  - `PUT /tasks/{id}/` - Update a task by its ID.
-  - `DELETE /tasks/{id}/` - Delete a task by its ID.
-
-- **Error Handling**:
-  - 404 errors when a task is not found.
-
-- **Testing**:
-  - Unit and integration tests using pytest.
-
 ## Local Environment Setup
 
 Follow these steps to set up the project in your local environment:
@@ -90,6 +75,24 @@ You can use Docker to run the application without additional local setup.
    ```
 
    This will expose the application at `http://localhost:8000`.
+
+## Features
+
+- When you run the application, you can access the API at `http://localhost:8000/api/tasks/`
+- When you run the application, you can access the GraphQL API at `http://localhost:8000/graphql/`
+
+- **API Endpoints**:
+  - `GET /tasks/` - Get all tasks.
+  - `POST /tasks/` - Create a new task.
+  - `GET /tasks/{id}/` - Get a task by its ID.
+  - `PUT /tasks/{id}/` - Update a task by its ID.
+  - `DELETE /tasks/{id}/` - Delete a task by its ID.
+
+- **Error Handling**:
+  - 404 errors when a task is not found.
+
+- **Testing**:
+  - Unit and integration tests using pytest.
 
 # GraphQL with Django and strawberry
 
