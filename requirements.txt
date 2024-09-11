@@ -1,0 +1,13 @@
+# packages for the project
+Django==4.2.16
+djangorestframework==3.15.2
+
+# coverage & testing
+pytest==8.3.3
+pytest-django==4.9.0
+coverage==7.6.1
+pytest-cov==5.0.0
+
+# Configure flakes8 & black
+ flake8==7.1.1
+ black==24.8.0
